@@ -31,9 +31,9 @@ def home():
 @cross_origin()
 def trainRoute():
     #For executing the code
-    #os.system("python main.py")
+    os.system("python main.py")
     #For tracking the pipeline
-    os.system("dvc repro")
+    #os.system("dvc repro")
     return "Training done successfully!"
 
 
@@ -49,7 +49,7 @@ def predictRoute():
 
 if __name__ == "__main__":
     clApp = ClientApp()
-
-    app.run(host='0.0.0.0', port=8080) #for AWS
+    #for AWS
+    app.run(host='0.0.0.0', port=8080) 
 
 
